@@ -128,6 +128,40 @@ for(let i = 1; i <= 100; i++){
     
     console.log(`${i} : ${(i%2===0)?"is an even number":""}`);
 }
+///////////////////////////////////
+console.log("C. Give me Five");
+console.log(`For the numbers 0 - 100, print out "I found a <number>. High five!" if the number is a multiple of five`);
+console.log(`Add to the code from above to print out "I found a number. Three is a crowd" if the number is a multiple of three`);
+for(let i = 0; i <= 100; i++){
+    if(i !== 0){
+        if(i%5 === 0){   
+    console.log(`I found a ${i}. High five!`);
+        }
+
+        if(i%3 === 0){   
+            console.log(`I found a ${i}. Three is a crowd`);
+                }
+    }
+}
+////////////////////////////////////
+console.log(`D. Savings account`);
+console.log(`Write code that will save the sum of all the numbers between 1 - 10 to a variable called bank_account`);
+let x = 1;
+let bank_account=0;
+while(x <= 100){
+    bank_account += x;
+    if(x === 10){
+        console.log(` Your bank_account should have ${bank_account}`);
+    }
+
+    if(x === 100){
+        console.log(` Your bank_account should have ${bank_account*2}`);
+
+    }
+    x++;
+}
+
+
 
 
 
